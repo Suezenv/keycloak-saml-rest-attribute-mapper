@@ -135,7 +135,7 @@ Using just:
 just build
 
 # Build for a specific Keycloak version
-just build-version 25.0.6
+just build-version 26.2.0
 ```
 
 
@@ -164,6 +164,7 @@ Access:
 The authenticator is built and tested with multiple Keycloak versions:
 
 - 26.4.7 (default)
+- 26.2.0
 
 While the builds differ slightly for each version, the core functionality remains the same. The version-specific builds ensure compatibility and proper integration with each Keycloak release.
 
