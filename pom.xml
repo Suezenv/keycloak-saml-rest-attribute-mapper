@@ -45,6 +45,10 @@
             <properties><keycloak.version>26.4.7</keycloak.version></properties>
             <activation><activeByDefault>true</activeByDefault></activation>
         </profile>
+        <profile>
+            <id>keycloak-26.2.0</id>
+            <properties><keycloak.version>26.2.0</keycloak.version></properties>
+        </profile>
     </profiles>
 
     <dependencies>

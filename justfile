@@ -41,4 +41,5 @@ shell:
 versions:
     @echo "Supported Keycloak versions:"
     @echo "- 26.4.7 (default)"
+    @echo "- 26.2.0"
 
