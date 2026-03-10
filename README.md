@@ -37,7 +37,7 @@ Add the following to your Dockerfile:
 
 ```dockerfile
 # Download and install the authenticator
-ARG SAML_REST_ATTRIBUTE_VERSION="v1.0.1" # x-release-please-version
+ARG SAML_REST_ATTRIBUTE_VERSION="v1.1.0" # x-release-please-version
 ARG SAML_REST_ATTRIBUTE_KC_VERSION="26.4.7"
 ADD https://github.com/Suezenv/keycloak-saml-rest-attribute-mapper/releases/download/${SAML_REST_ATTRIBUTE_VERSION}/saml-rest-attribute-mapper-${SAML_REST_ATTRIBUTE_VERSION}-kc-${SAML_REST_ATTRIBUTE_KC_VERSION}.jar \
     /opt/keycloak/providers/keyclaok-rest-saml-attribute-mapper.jar
