@@ -7,6 +7,7 @@ import org.keycloak.models.ProtocolMapperModel;
 import org.keycloak.models.UserSessionModel;
 import org.keycloak.protocol.saml.mappers.AbstractSAMLProtocolMapper;
 import org.keycloak.protocol.saml.mappers.AttributeStatementHelper;
+import org.keycloak.saml.common.constants.JBossSAMLURIConstants;
 import org.keycloak.protocol.saml.mappers.SAMLAttributeStatementMapper;
 import org.keycloak.dom.saml.v2.assertion.AttributeType;
 import org.keycloak.provider.ProviderConfigProperty;
@@ -360,10 +361,20 @@ public class SamlRestAttributeMapper extends AbstractSAMLProtocolMapper implemen
 
         AttributeType attribute = new AttributeType(attributeName);
 
-        if (nameFormat != null && !nameFormat.isEmpty()) {
-            attribute.setNameFormat(nameFormat);
-        } else {
-            attribute.setNameFormat("urn:oasis:names:tc:SAML:2.0:attrname-format:basic");
+        // Default format
+        if (nameFormat == null || nameFormat.isEmpty()) {
+            nameFormat = AttributeStatementHelper.BASIC;
+        }
+
+        switch (nameFormat) {
+            case AttributeStatementHelper.URI_REFERENCE:
+                attribute.setNameFormat(JBossSAMLURIConstants.ATTRIBUTE_FORMAT_URI.get());
+                break;
+            case AttributeStatementHelper.UNSPECIFIED:
+                attribute.setNameFormat(JBossSAMLURIConstants.ATTRIBUTE_FORMAT_UNSPECIFIED.get());
+                break;
+            default:
+                attribute.setNameFormat(JBossSAMLURIConstants.ATTRIBUTE_FORMAT_BASIC.get());
         }
 
         // Add all values
