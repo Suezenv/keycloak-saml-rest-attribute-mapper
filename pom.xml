@@ -4,7 +4,7 @@
 
     <groupId>com.suez.keycloak</groupId>
     <artifactId>saml-rest-attribute-mapper</artifactId>
-    <version>1.0.1</version>
+    <version>1.1.0</version>
     <packaging>jar</packaging>
 
     <name>SAML REST Attribute Mapper</name>
