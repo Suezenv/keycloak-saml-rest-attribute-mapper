@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/Suezenv/keycloak-saml-rest-attribute-mapper/compare/v1.1.1...v1.1.2) (2026-09-08)
+
+
+### Miscellaneous Chores
+
+* release 1.1.2 ([0265937](https://github.com/Suezenv/keycloak-saml-rest-attribute-mapper/commit/0265937aaa2930318992b6537ecaa01937705eab))
+
 ## [1.1.1](https://github.com/Suezenv/keycloak-saml-rest-attribute-mapper/compare/v1.1.0...v1.1.1) (2026-09-08)
 
 
