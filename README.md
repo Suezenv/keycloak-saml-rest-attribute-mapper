@@ -163,8 +163,8 @@ Access:
 
 The authenticator is built and tested with multiple Keycloak versions:
 
-- 26.4.7 (default)
-- 26.2.0
+- 26.7.0 (default)
+- 26.6.0
 
 While the builds differ slightly for each version, the core functionality remains the same. The version-specific builds ensure compatibility and proper integration with each Keycloak release.
 
