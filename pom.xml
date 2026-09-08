@@ -32,19 +32,19 @@
         <buildVersion>dev</buildVersion>
 
         <!-- Default Keycloak version -->
-        <keycloak.version>26.4.7</keycloak.version>
+        <keycloak.version>26.7.0</keycloak.version>
     </properties>
 
     <!-- Profiles for different Keycloak versions -->
     <profiles>
         <profile>
-            <id>keycloak-26.4.7</id>
-            <properties><keycloak.version>26.4.7</keycloak.version></properties>
+            <id>keycloak-26.7.0</id>
+            <properties><keycloak.version>26.7.0</keycloak.version></properties>
             <activation><activeByDefault>true</activeByDefault></activation>
         </profile>
         <profile>
-            <id>keycloak-26.2.0</id>
-            <properties><keycloak.version>26.2.0</keycloak.version></properties>
+            <id>keycloak-26.6.0</id>
+            <properties><keycloak.version>26.6.0</keycloak.version></properties>
         </profile>
     </profiles>
 
